@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(137, 137, 250);
+}
+p {
+    font-size: 60px;
+}
+.container {
+ position: relative;
+ color: black
+}
+
+.bottom {
+    position: absolute;
+    top: 350px;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 170px;
+    margin-left: 10px;
+    font-size: 60px;
+    color: black;
+}

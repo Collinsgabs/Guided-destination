@@ -1,5 +1,5 @@
 li {
-    -webkit-text-fill-color: aliceblue;
+    -webkit-text-fill-color: white ;
     font-family: serif;
     font-size: 30px;
 }
@@ -29,3 +29,82 @@ nav ul li {
     background-size: cover;
     padding-top: 10px;
 }
+
+.absPos {
+    position: absolute;
+}
+.relPos {
+    position: relative;
+}
+#photoBox {
+    width: 490px;
+    height: 700px;
+}
+#imgPlaya {
+    width: 400px;
+    top: 370px;
+    height: 300px;
+    right: 50px;
+    z-index: 9;
+}
+#imgOcean {
+    width: 450px;
+    height: 360;
+    top: 30px;
+    left: 330px;
+    z-index: 9;
+}
+#imgLsf {
+    width: 380px;
+    height: 490px;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+#imgGaudi {
+    width: 300px;
+    top: 350px;
+    left: 440px;
+    z-index: 8;
+}
+#imgPark {
+    width: 370px;
+    height: 300px;
+    top: 700px;
+    z-index: 4;
+}
+#imgGaudi1 {
+    width: 370px;
+    height: 270px;
+    top: 460px;
+    left: 0px;
+    z-index: 10;
+}
+#imgGaudi2 {
+    width: 450px;
+    height: 350px;
+    top: 660px;
+    left: 320px;
+}
+.collagePhoto {
+    border: 3px solid white;
+}
+
+img { 
+    border-style: none; 
+}
+
+.container {
+    position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 80px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }

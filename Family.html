@@ -2,8 +2,10 @@
 
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />             
         <title>Travel to Spain!</title>
     </head>
@@ -30,13 +32,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <img src="images/gaudi 3.jpg" width="500px"/>
+                        <img src="images/gaudi 3.jpg" class="rounded-circle" width="500px"/>
                         <div class="text-block">
                             <a href="https://www.barcelona.city-tour.com/es/blog/legado-antoni-gaudi">Gaudi City</a>
                         </div>
                     </div>
                     <div class="col">
-                        <img src="images/noria.jpg" width="500px"/>
+                        <img src="images/noria.jpg" class="rounded-circle" width="500px"/>
                         <div class="text-block">
                             <a href="https://www.tibidabo.cat/en?language=es">Funfair</a>
                         </div>
@@ -44,35 +46,74 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <img src="images/playa 2.jpg" width="350px"/>
+                        <img src="images/becah 1.jpg" class="rounded-circle" height="250px" width="350px"/>
                         <div class="text-block">
                             <a href="https://goo.gl/maps/WUfELThkSxdGYtnH6">The beach?</a>
                         </div>   
                     </div>
                     <div class="col">
-                        <img src="images/oark.jpg" width="350px"/>
+                        <img src="images/oark.jpg" class="rounded-circle" heigth="290px" width="350px"/>
                         <div class="text-block">
                             <a href="https://theculturetrip.com/europe/spain/articles/parks-and-gardens-in-barcelona-you-need-to-see/">Parks</a>
                         </div>
                     </div>
                     <div class="col">
-                        <img src="images/museo.jpg" width="350px" />
+                        <img src="images/museo.jpg" class="rounded-circle" heigth="250px" width="350px" />
                         <div class="text-block">
                         <a href="https://www.timeout.com/barcelona/attractions/barcelonas-best-museums-1">Museums</a>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Sagrada Familia
+                            </button>
+                        </h5>
+                    </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                            His minor basilica is a project of incredible scale and ambition that is still only around three quarters complete more than a 140 years after Gaudí first became involved.When its spires are finished it will be the tallest church building in the world.The Sagrada Família combines several architectural styles including Catalan Modernism, Art Nouveau and Spanish Late-Gothic, but Gaudí’s masterpiece defies these kinds of definitions when you look up open-mouthed at the ceiling of the nave.
+                            </div>
+                        </div>
+                </div>
+                    
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Camp Nou
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            In the western Les Corts neighbourhood is the 99,000-seater stadium that has been the home ground of FC Barcelona since 1957.If you are a fan you’ll be in heaven, touring the stadium and browsing the memorabilia of one of the world’s most prestigious teams at the museum.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Palau de la Música Catalana
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            It was built by Gaudí’s contemporary, Lluís Domènech i Montaner for the Orfeó Català, a Barcelona choral society.It was built by Gaudí’s contemporary, Lluís Domènech i Montaner for the Orfeó Català, a Barcelona choral society.The hall is a sublime venue for opera, symphonies and folk music, so have a look at the schedule when you plan your trip.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</ap>
     </body>
 
 

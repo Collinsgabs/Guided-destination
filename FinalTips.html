@@ -1,11 +1,21 @@
 <html>
     
     <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-5.4.3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="styles.css"/>
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
         <title>Travel to Spain!</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script>
+        $(function(){
+            $('.fadein img:gt(0)').hide();
+            setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 3000);
+        });
+        </script>
+
     </head>
     <body>
             
@@ -27,9 +37,95 @@
         </div>   
         
         <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm">
+                    <!-- <title>DON'T MISS OUT!!</title> -->
+                        <iframe width="670" height="380" src="https://www.youtube.com/embed/lXKxmqV86OA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h2>Flamenco dance (baile) is a highly-expressive, Spanish dance form.</h2> 
+                        <h2>The flamenco is a solo dance characterized by hand clapping, percussive footwork, and intricate hand, arm, and body movements. The dance is usually accompanied by a singer and guitar player.</h2>
+                        
+                    </div>
+                    
+                    <div class="col-sm">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <col>
+                                    <row>
+                                        <col>
+                                        <div class="card" style="width: 24rem;">
+                                            <img class="card-img-top" src="images/fla.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Flamenco</h5>
+                                            </div>
+                                        </div>
+                                        </col>
+                    
+                                        <col>
+                                        <div class="card" style="width: 24rem;">
+                                            <img class="card-img-top" src="images/flam.jfif" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Buleria</h5>
+                                            </div>
+                                        </div>
+                                        </col>
+                                    </row>
+                                </col>
 
-       
+                                <col>
+                                    <row>
+                                        <!-- <col>
+                                            <div class="card" style="width: 20rem">
+                                                <img class="car-img-top" src="images/paella.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                    <h5 class="card=title">Paella</h5>
+                                                </div>
+                                            </div>
+                                        </col> -->
 
+                                        <col>
+                                        <div class="card" style="width: 20rem;">
+                                            <img class="card-img-top" src="images/paella 1.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Paella</h5>
+                                            </div>
+                                        </div>
+                                        </col>
+                                        
+                                        <col>
+                                        <div class="card" style="width: 20rem;">
+                                            <img class="card-img-top" src="images/jamon.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Jamon</h5>
+                                            </div>
+                                        </div>
+                                        </col>
+                                    </row>
+                                </col>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="slideshow">
+                <img src="images/barc 1.jpg">
+                <img src="images/beach.jpg">
+                <img src="images/barc.jpg">
+                <img src="images/barc 2.jpg">
+                <img src="images/barc 3.jpg">
+            </div>
+
+        </div>
+            <script>
+            $('.fadein img:gt(0)').hide();
+            setInterval(function(){
+              $('.fadein :first-child').fadeOut()
+                .next('img').fadeIn()
+                .end().appendTo('.fadein');}, 
+              3000);
+            </script>
     </body>
 
 
